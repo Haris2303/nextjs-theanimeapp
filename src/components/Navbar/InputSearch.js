@@ -17,15 +17,17 @@ const InputSearch = () => {
 
   return (
     <div className="relative">
-      <input
-        type="text"
-        placeholder="pencarian anime.."
-        className="w-full p-2 rounded-lg"
-        ref={searchRef}
-      />
-      <button className="absolute top-2 end-2" onClick={handleSearch}>
-        <MagnifyingGlass size={25} />
-      </button>
+      <form onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="pencarian anime.."
+          className="w-full p-2 rounded-lg"
+          ref={searchRef}
+        />
+        <button className="absolute top-2 end-2" onClick={handleSearch}>
+          <MagnifyingGlass size={25} />
+        </button>
+      </form>
     </div>
   );
 };
