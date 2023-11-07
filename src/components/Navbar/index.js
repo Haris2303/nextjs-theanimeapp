@@ -3,8 +3,8 @@ import InputSearch from "./InputSearch";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-900">
-      <div className="flex md:flex-row flex-col justify-between p-4">
+    <nav className="bg-color-accent">
+      <div className="flex md:flex-row flex-col justify-between items-center p-4">
         <Link href="/" className="text-white text-xl font-bold">
           TheAnimeList
         </Link>

@@ -7,7 +7,10 @@ const AnimeList = ({ api }) => {
       {api.data.map((data) => {
         return (
           <div key={data.mal_id}>
-            <Link href={`/${data.mal_id}`} className="cursor-pointer">
+            <Link
+              href={`/${data.mal_id}`}
+              className="cursor-pointer text-color-primary hover:text-color-accent transition-all"
+            >
               <Image
                 src={data.images.webp.image_url}
                 alt="Placeholder"
